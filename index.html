@@ -148,6 +148,100 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-三栏自适应布局的多种方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/14/三栏自适应布局的多种方法/">三栏自适应布局的多种方法</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/14/三栏自适应布局的多种方法/" class="archive-article-date">
+  	<time datetime="2018-05-14T13:09:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-14</time>
+</a>
+        
+      </header>
+    
+	<!-- 目录内容 -->
+
+<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>方法一：基于浮动实现三栏自适应布局<br>左右宽度固定中间自适应<br>html代码：<br>    <div class="left"></div><br>    <div class="right"></div><br>    <div class="main"></div><br>cssd代码：<br>    .left{<br>        width:200px;<br>        height: 600px;<br>        background-color: pink;<br>        float: left;<br>    }<br>    .main{<br>        margin: 0 200px;<br>        height: 600px;<br>        background-color: #d87093;<br>    }<br>    .right{<br>        width: 200px;<br>        height: 600px;<br>        background-color: pink;<br>        float: right;<br>    }</p>
+<p>需要注意的是三个div标签的顺序的关键是要把主体div放在最后，左右两栏div顺序任意。</p>
+<p>方法二：基于绝对定位实现三栏自适应布局<br>html代码：<br>    <div class="left"></div><br>    <div class="main"></div><br>    <div class="right"></div><br>css代码：<br>    .left{<br>        width:200px;<br>        height: 600px;<br>        background-color: pink;<br>        position: absolute;<br>        top: 0;<br>        left: 0;</p>
+<pre><code>}
+.main{
+    margin: 0 200px;
+    height: 600px;
+    background-color: #d87093;
+}
+.right{
+    width: 200px;
+    height: 600px;
+    background-color:pink;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+</code></pre><p>方法三：双飞翼布局<br>html代码：<br>    <div class="main"><br>    <div class="body"></div><br>    </div><br>    <div class="left"></div><br>    <div class="right"></div><br>css代码：<br>    .main{<br>        width:100%;<br>        height: 600px;<br>        float: left;<br>    }<br>    .main .body{<br>        margin: 0 200px;<br>        background-color:#d87093;<br>        height: 600px;<br>    }<br>    .left{<br>        width:200px;<br>        height:600px;<br>        float:left;<br>        background-color: pink;<br>        margin-left: -100%;<br>    }<br>    .right{<br>        width:200px;<br>        height:600px;<br>        float:left;<br>        background-color:pink;<br>        margin-left: -200px;<br>    }<br>`</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/14/三栏自适应布局的多种方法/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -319,6 +413,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
@@ -386,7 +484,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的成果&lt;br&gt;再接再厉！</div>
   	  	
     	</section>
     
